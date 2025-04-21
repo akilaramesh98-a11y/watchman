@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800&display=swap");
+
+body{
+    background-color: #F8F8F8;
+    font-family: 'Inter', 'sans-serif';
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+@layer components {
+    .label{
+        @apply text-[#71747A] text-[12px]
+    }
+    .value{
+        @apply text-[#42454E] text-[14px] font-[600]
+    }
+    .button{
+        @apply flex items-center justify-center bg-[#2962FF] border rounded-[6px] w-[152px] h-[44px]
+    }
+    .buttonLabel{
+        @apply text-[14px] font-semibold text-white
+    }
+    
+}
+
+
+
